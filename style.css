@@ -169,7 +169,10 @@ body{
     font-family: "poxel-font";
 }
 
-
+#nextLevel{
+  border: white;
+  color: white;
+}
   
   .box{
     position: absolute;
