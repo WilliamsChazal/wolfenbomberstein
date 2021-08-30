@@ -1,5 +1,5 @@
 let bossWalk = 0;
-
+let bossCount = 0;
 
 function addBoss(max){
 
@@ -33,9 +33,12 @@ setInterval(mouvEnemies, 500)
 function mouvEnemies(){
     let doomGuy = document.getElementById('player');
     let boss = document.getElementsByClassName('boss');
+    bossCount++;
+    
 
     for (let i = 0; i < boss.length; i++){
         let random = Math.floor(Math.random()*24);
+        boss[i].style.backgroundImage="url('assets/mechants/boss-" + bossCount + ".png')";
         
 switch (random) {
     case 0: 
@@ -75,11 +78,11 @@ for (let i = 0; i < boss.length; i++) {
             if(colisionDetect (doomGuy,doomGuy.offsetLeft, doomGuy.offsetTop, (boss[i]))){
                /*  boss.backgroundImage="url('assets/mechants/demon-2.png')" */
                 doomGuyDead();
-                setTimeout(()=>alert("GAME OVER"),document.location.reload(),750);
+               
             }
             
         }
-        
+        if (bossCount >= 2 ) bossCount=0 
 }
 
 /* const doomGuy = document.getElementById('doomGuy');

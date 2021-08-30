@@ -42,7 +42,7 @@ function testEnd() {
     let enemies = document.getElementsByClassName('enemies');
     let boss = document.getElementsByClassName('boss');
     if (enemies.length == 0 && boss.length == 0) {
-        setTimeout(()=>alert("Victoire !!"),document.location.reload(),750);
+        setTimeout (()=>document.getElementById('victoire').style.display='block', 800);
     }
     setTimeout (()=>testEnd(),1000)
 }

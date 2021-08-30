@@ -1,5 +1,5 @@
 let monsterGuyWalk = 0;
-
+let badGuyCount = 0;
 
 function addEnemies(max){
 
@@ -33,9 +33,12 @@ setInterval(mouvEnemies, 500)
 function mouvEnemies(){
     let doomGuy = document.getElementById('player');
     let enemies = document.getElementsByClassName('enemies');
+    badGuyCount ++;
 
     for (let i = 0; i < enemies.length; i++){
         let random = Math.floor(Math.random()*24);
+        enemies[i].style.backgroundImage="url('assets/mechants/bad-guy-" + badGuyCount + ".png')";
+       
         
 switch (random) {
     case 0: 
@@ -70,7 +73,7 @@ switch (random) {
 
 
     }
-    
+    if (badGuyCount >= 2 ) badGuyCount=0
 
         
 }

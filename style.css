@@ -14,6 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
+    flex-direction: row;
 
 
     
@@ -29,20 +30,78 @@ body{
 .texte{
    color: white; 
 }
+
+
  
+#victoire{
+  display: flex;
+  display: none;
+  color: white;
+  font-size: 56px;
+  z-index: 99;
+  background-color: #111845;
+  position: relative;
+  font-family: "poxel-font";
+  width: 50%;
+  margin: auto;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: #111845a6;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    border: 2px solid #2a3cad;
+    color: white;
+    padding: 20px;
+  margin: auto;
+
+}
+#mort{
+  display: flex;
+  display: none;
+  color: white;
+  font-size: 56px;
+  z-index: 99;
+  background-color: #111845;
+  position: relative;
+  font-family: "poxel-font";
+  width: 50%;
+  margin: auto;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: #111845a6;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    border: 2px solid #2a3cad;
+    color: white;
+    padding: 20px;
+  margin: auto;
+
+}
+
 
 
 .container_global {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 20px;
-    grid-auto-flow: row;
+    display: grid; 
+    grid-template-columns: 0.3fr 1fr; 
+    gap: 0px 20px; 
     grid-template-areas:
       "container_rules container_game";
+      
   }
   
-  .container_rules { grid-area: container_rules; }
+  .container_rules { grid-area: container_rules;
+    flex-wrap: wrap; }
   
   .container_game { grid-area: container_game; }
   
@@ -89,9 +148,9 @@ body{
     background-position: center;
 }
 .boss{
-    width: 60px;
-    height: 60px;
-    background-image: url(assets/mechants/boss.png);
+    width: 50px;
+    height: 50px;
+    background-image: url(assets/mechants/boss-1.png);
     position: absolute;
     background-size: cover;
     background-position: center;
@@ -107,6 +166,7 @@ body{
 
 .container_rules{
     color: white;
+    font-family: "poxel-font";
 }
 
 
@@ -246,3 +306,6 @@ body{
     background-size: cover;
     background-position: center;
 } */
+
+
+

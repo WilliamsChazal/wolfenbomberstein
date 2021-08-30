@@ -102,11 +102,13 @@ function positionTileSet(tileset){
 //Fonction de la mort du doomGuy
 function doomGuyDead() {
   let doomGuy = document.getElementById('player');
-  doomGuy.style.backgroundImage="url('assets/player/player_mort-1.png')";
+  doomGuy.style.backgroundImage="url('assets/player/mort-1.png')";
     setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/mort-2.png')", 100);
     setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/mort-3.png')", 300);
     setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/mort-4.png')", 500);
     setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/mort-5.png')", 700);
+    setTimeout (()=>document.getElementById('player').style.display='none', 750); 
+    setTimeout (()=>document.getElementById('mort').style.display='block', 800);
     
     
     /* setTimeout (()=>alert('dead'), 2500); */
@@ -115,7 +117,7 @@ function doomGuyDead() {
 function bombExplode() {
   setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/bomb-2.png')",500);
   setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/bomb-3.png')", 650);
-  setTimeout (()=>bomb.style.backgroundImage= display='none', 750); 
+ 
 
   
 }
@@ -191,7 +193,7 @@ document.addEventListener('keydown', function(event) {
    /* addWall(); */
    addTileSet();
    addEnemies(5);
-   addBoss(2)
+   addBoss(1)
    testEnd();
    addPlayer();
    addBomb();

@@ -11,32 +11,35 @@
 
     <div class="container_titre">
         <div class="titre"><H1>WolfenBomberStein</H1></div>
+        
     </div>
     
     
 <div class="container_global">
-  <div class="container_rules">Utiliser les flèches directionnels pour vous déplacer.</div>
-  <div class="container_game"> 
+  <div class="container_rules">Utiliser les flèches directionnels pour vous déplacer.<br> La touche 'ESPACE' permet de poser une bombe qui détruit les enemies.<br>Pour gagner il suffit de détruire tous les enemies.<br>Les monstres bleu peuvent tuer le héros, <br>si le héros meurt la partie est finie.</div>
 
-     <div class="container">
-
+  <div class="container_game">
+  <div id="mort">GAME OVER<br><button onclick="document.location.reload()">Rejouer</button></div>
+  <div id="victoire">Victoire !! Les forces de l'enfer ont été repoussé !<br><button onclick="document.location.reload()">Rejouer</button></div>
+    <div class="container">   
         <div class="box">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <div class="content">
+        <div class="content">
+       
             <div id="gameContainer">
-            <div id="player"></div>
-            <div id="bomb"></div>
-        </div>
 
+                <div id="player"></div>
+                <div id="bomb"></div>
+            </div>
         </div>
-        
-      </div>
-
   </div>
+
 </div>
+
+
 
 
 
