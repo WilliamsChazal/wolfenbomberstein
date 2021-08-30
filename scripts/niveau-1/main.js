@@ -1,9 +1,5 @@
 
-let tileset = document.getElementsByClassName('tileset');
-let game = document.getElementById('gameContainer');
-let moveSize = 12;
-let doomGuyWalk = 0;
-count = 0;
+
 
 
 function addPlayer(){
@@ -16,6 +12,12 @@ function addBomb(){
       let div = document.createElement('div');
       div.setAttribute('class', 'bomb')
       div.setAttribute('id', 'bomb')
+      document.getElementById('gameContainer').appendChild(div);
+}
+function addShoot(){
+      let div = document.createElement('div');
+      div.setAttribute('class', 'shoot')
+      div.setAttribute('id', 'shoot')
       document.getElementById('gameContainer').appendChild(div);
 }
 
@@ -121,6 +123,13 @@ function bombExplode() {
 
   
 }
+function shootExplode() {
+  setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/shoot-1.png')",500);
+  setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/shoot-2.png')", 650);
+ 
+
+  
+}
 
 //Fonction de déplacement du DoomGuy
 document.addEventListener('keydown', function(event) {
@@ -197,6 +206,7 @@ document.addEventListener('keydown', function(event) {
    testEnd();
    addPlayer();
    addBomb();
+   addShoot();
  }
 
  init();

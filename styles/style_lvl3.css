@@ -121,7 +121,7 @@ body{
     width: 640px;
     height: 640px;
     margin: 0 auto;
-    background-image: url(assets/background.png);
+    background-image: url(../assets/background.png);
     position: relative;
     overflow: hidden;
 
@@ -131,8 +131,8 @@ body{
 
 #player{
      width: 60px;
-    height:65px; 
-    background-image: url(assets/player/face-1.png);
+    height:60px; 
+    background-image: url(../assets/player/face-1.png);
     background-size: 100%;
     background-position:  center;
     position: absolute;
@@ -142,17 +142,18 @@ body{
 #bomb{
     width: 50px;
     height: 50px;
-    background-image: url(assets/bomb/bomb.png);
+    background-image: url(../assets/bomb/bomb.png);
     display: none;
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 99;
 }
 
 .enemies{
     width: 45px;
     height: 45px;
-    background-image: url(assets/mechants/bad-guy-1.png);
+    background-image: url(../assets/mechants/bad-guy-1.png);
     position: absolute;
     background-size: cover;
     background-position: center;
@@ -160,7 +161,7 @@ body{
 .boss{
     width: 50px;
     height: 50px;
-    background-image: url(assets/mechants/boss-1.png);
+    background-image: url(../assets/mechants/boss-1.png);
     position: absolute;
     background-size: cover;
     background-position: center;
@@ -168,7 +169,7 @@ body{
 .tileset{
     width: 40px;
     height: 40px;
-    background-image: url(assets/tileset.png);
+    background-image: url(../assets/tileset.png);
     position: absolute;
     background-size: cover;
     background-position: center;

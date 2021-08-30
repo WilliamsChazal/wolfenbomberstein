@@ -1,6 +1,6 @@
 document.addEventListener('keydown', function(event) {
     let bomb = document.getElementById('bomb');
-    console.log('coucou')
+    /* console.log('coucou') */
     let enemies = document.getElementsByClassName('enemies');
     let boss = document.getElementsByClassName('boss');
     let doomGuy = document.getElementById('player');

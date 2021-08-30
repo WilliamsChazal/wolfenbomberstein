@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style_lvl1.css">
     <title>WolfenBomberStein</title>
 </head>
 <body>
@@ -34,6 +34,7 @@
 
                 <div id="player"></div>
                 <div id="bomb"></div>
+                <div id="shoot"></div>
             </div>
         </div>
   </div>
@@ -56,10 +57,12 @@
                 });
         </script>
 
-<script src="scripts/badguy.js"></script>
-<script src="scripts/boss.js"></script>
-<script src="scripts/bomb.js"></script>
-<script src="scripts/main.js"></script>
+<script src="/wolfenbomberstein/scripts/niveau-1/badguy.js"></script>
+<script src="/wolfenbomberstein/scripts/niveau-1/bomb.js"></script>
+<script src="/wolfenbomberstein/scripts/niveau-1/shoot-1.js"></script>
+<script src="/wolfenbomberstein/scripts/niveau-1/boss.js"></script>
+<script src="/wolfenbomberstein/scripts/niveau-1/main.js"></script>
+
 
 
 

@@ -7,7 +7,7 @@ document.addEventListener('keydown', function(event) {
     if (event.code == 'Space'){
         /* setTimeout (()=> */doomGuy.style.backgroundImage="url('assets/player/tir-1.png')";
         bomb.style.display='block';
-        bomb.style.top = doomGuy.offsetTop  +10 + "px";
+        bomb.style.top = doomGuy.offsetTop  +15 + "px";
         bomb.style.left = doomGuy.offsetLeft +10 + "px";
  
         setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/bomb.png')", 200);
