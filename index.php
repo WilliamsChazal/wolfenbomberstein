@@ -8,35 +8,39 @@
     <title>WolfenBomberStein</title>
 </head>
 <body>
+
     <div class="container_titre">
-
-    <div class="titre"><H1>WolfenBomberStein</H1></div>
-
+        <div class="titre"><H1>WolfenBomberStein</H1></div>
     </div>
     
+    
+<div class="container_global">
+  <div class="container_rules">Utiliser les flèches directionnels pour vous déplacer.</div>
+  <div class="container_game"> 
 
+     <div class="container">
 
+        <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+            <div id="gameContainer">
+            <div id="player"></div>
+            <div id="bomb"></div>
+        </div>
 
-    <section>
-  <div class="container">
-
-      <div class="box">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <div class="content">
-        <div id="gameContainer">
-        <div id="player"></div>
-        <div id="bomb"></div>
-    </div>
         </div>
         
       </div>
 
   </div>
-</section>
+</div>
 
+
+
+   
 
 
 
