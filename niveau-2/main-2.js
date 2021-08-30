@@ -193,7 +193,7 @@ document.addEventListener('keydown', function(event) {
    /* addWall(); */
    addtileset();
    addEnemies(8);
-   addBoss(3)
+   addBoss(2)
    testEnd();
    addPlayer();
    addBomb();

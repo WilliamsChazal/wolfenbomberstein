@@ -23,9 +23,19 @@ body{
     font-family: "poxel-font";
     color: white;
     font-size: 26px;
-
-
 }
+
+.lvl{
+  font-family: "poxel-font";
+  color: #50dfdb;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;  
+}
+
+
 
 .texte{
    color: white; 
@@ -120,8 +130,8 @@ body{
 
 
 #player{
-     width: 48px;
-    height:60px; 
+     width: 60px;
+    height:65px; 
     background-image: url(assets/player/face-1.png);
     background-size: 100%;
     background-position:  center;
@@ -140,8 +150,8 @@ body{
 }
 
 .enemies{
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     background-image: url(assets/mechants/bad-guy-1.png);
     position: absolute;
     background-size: cover;
