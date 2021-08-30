@@ -1,5 +1,5 @@
-let monsterGuyWalk = 0;
-let badGuyCount = 0;
+let monsterGuyWalkdLvl2 = 0;
+let badGuyCountlvl2 = 0;
 
 function addEnemies(max){
 
@@ -33,11 +33,11 @@ setInterval(mouvEnemies, 500)
 function mouvEnemies(){
     let doomGuy = document.getElementById('player');
     let enemies = document.getElementsByClassName('enemies');
-    badGuyCount ++;
+    badGuyCountlvl2 ++;
 
     for (let i = 0; i < enemies.length; i++){
         let random = Math.floor(Math.random()*24);
-        enemies[i].style.backgroundImage="url('assets/mechants/bad-guy-" + badGuyCount + ".png')";
+        enemies[i].style.backgroundImage="url('assets/mechants/bad-guy-" + badGuyCountlvl2 + ".png')";
        
         
 switch (random) {
@@ -73,7 +73,7 @@ switch (random) {
 
 
     }
-    if (badGuyCount >= 2 ) badGuyCount=0
+    if (badGuyCountlvl2 >= 2 ) badGuyCountlvl2=0
 
         
 }

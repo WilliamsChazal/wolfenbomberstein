@@ -1,5 +1,5 @@
-let bossWalk = 0;
-let bossCount = 0;
+let bossWalkLvl2 = 0;
+let bossCountLvl2 = 0;
 
 function addBoss(max){
 
@@ -28,17 +28,17 @@ function positionEnemies(boss){
     boss.style.left = y + 'px';
 }
 
-setInterval(mouvEnemies, 500)
+setInterval(mouvEnemies, 200)
 
 function mouvEnemies(){
     let doomGuy = document.getElementById('player');
     let boss = document.getElementsByClassName('boss');
-    bossCount++;
+    bossCountLvl2++;
     
 
     for (let i = 0; i < boss.length; i++){
         let random = Math.floor(Math.random()*24);
-        boss[i].style.backgroundImage="url('assets/mechants/boss-" + bossCount + ".png')";
+        boss[i].style.backgroundImage="url('assets/mechants/boss-" + bossCountLvl2 + ".png')";
         
 switch (random) {
     case 0: 
@@ -82,7 +82,7 @@ for (let i = 0; i < boss.length; i++) {
             }
             
         }
-        if (bossCount >= 2 ) bossCount=0 
+        if (bossCountLvl2 >= 2 ) bossCountLvl2=0 
 }
 
 /* const doomGuy = document.getElementById('doomGuy');

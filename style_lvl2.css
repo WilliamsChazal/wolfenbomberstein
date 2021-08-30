@@ -13,18 +13,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
-    flex-direction: row;
-
-
-    
+    margin-bottom: 3rem;    
 }
+
 .titre{
     font-family: "poxel-font";
     color: white;
     font-size: 26px;
 
 
+}
+.lvl{
+  font-family: "poxel-font";
+  color: white;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;  
 }
 
 .texte{
@@ -50,11 +56,11 @@ body{
     transform: translate(-50%, -50%);
     width: 600px;
     height: 600px;
-    background: #111845a6;
+    background: #3706179d;
     box-sizing: border-box;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgb(23, 32, 90);
-    border: 2px solid #2a3cad;
+    box-shadow:  0 20px 50px rgba(160, 36, 14, 0.788);
+    border:  2px solid #e91d1d;
     color: white;
     padding: 20px;
   margin: auto;
@@ -77,16 +83,17 @@ body{
     transform: translate(-50%, -50%);
     width: 600px;
     height: 600px;
-    background: #111845a6;
+    background: #3706179d;
     box-sizing: border-box;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgb(23, 32, 90);
-    border: 2px solid #2a3cad;
+    box-shadow:  0 20px 50px rgb(160, 36, 14,0.788);
+    border:  2px solid #e91d1d;
     color: white;
     padding: 20px;
   margin: auto;
 
 }
+
 
 
 
@@ -111,7 +118,7 @@ body{
     width: 640px;
     height: 640px;
     margin: 0 auto;
-    background-image: url(assets/background.png);
+    background-image: url(assets/lvl-2.png);
     position: relative;
     overflow: hidden;
 
@@ -181,11 +188,11 @@ body{
     transform: translate(-50%, -50%);
     width: 700px;
     height: 700px;
-    background: #111845a6;
+    background: #370617;
     box-sizing: border-box;
     overflow: hidden;
-    box-shadow: 0 20px 50px rgb(23, 32, 90);
-    border: 2px solid #2a3cad;
+    box-shadow: 0 20px 50px rgb(160, 36, 14);
+    border: 2px solid #e91d1d;
     color: white;
     padding: 20px;
   }
@@ -214,7 +221,7 @@ body{
     left:15px;
     right:15px;
     bottom:15px;
-    border:1px solid #EDF2F4;
+    border:1px solid #ffba08;
     padding:20px;
     text-align:center;
     box-shadow: 0 5px 10px rgba(9,0,0,0.5);
@@ -258,7 +265,7 @@ body{
     position: absolute;
     width:100%;
     height: 2px;
-    background: #50dfdb;
+    background: #e85d04;
     animation: animate 4s linear infinite;
   }
   
