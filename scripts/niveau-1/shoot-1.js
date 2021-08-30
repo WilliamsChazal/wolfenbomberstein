@@ -1,7 +1,8 @@
-setInterval(shooting,100)
+
 
 let shootMouv = 0
  function shooting() {
+    let shoot =document.getElementById('shoot');
     let doomGuy = document.getElementById('player');
     let enemies = document.getElementsByClassName('enemies');
     shootMouv ++;
@@ -16,47 +17,43 @@ let shootMouv = 0
         let enemies = document.getElementsByClassName('enemies');
         let boss = document.getElementsByClassName('boss');
         let doomGuy = document.getElementById('player');
+
             if (event.code == 'KeyE') {
-                
-                let doomGuy = document.getElementById('player');
-                let enemies = document.getElementsByClassName('enemies');
                 shootMouv ++;
                 shoot.style.top =shoot.offsetTop +10 +'px'
                 shoot.style.left =shoot.offsetLeft  +'px'
     
+                doomGuy.style.backgroundImage="url('assets/player/tir-1.png')";
+                setTimeout (()=> doomGuy.style.backgroundImage="url('assets/player/tir-2.png')",100);
+                setTimeout (()=>shoot.style.backgroundImage="url('assets/bomb/shoot-1.png')", 200);
     
-            doomGuy.style.backgroundImage="url('assets/player/tir-1.png')";
-            setTimeout (()=> doomGuy.style.backgroundImage="url('assets/player/tir-2.png')",100);
-    
-            shoot.style.display='block';
-            shoot.style.top = doomGuy.offsetTop  +10+'px';
-            shoot.style.left = doomGuy.offsetLeft +10+'px';
+                shoot.style.display='block';
+                shoot.style.top = doomGuy.offsetTop  +10+'px';
+                shoot.style.left = doomGuy.offsetLeft +10+'px';
 
-    
-            setTimeout (()=>shoot.style.backgroundImage="url('assets/bomb/shoot-1.png')", 200);
-            for (let i = 0; i < enemies.length; i++) {
-                if(colisionDetect (shoot,shoot.offsetLeft, shoot.offsetTop, (enemies[i]))){
-                shootExplode();
-                (enemies[i]).style.backgroundImage = "url('assets/mechants/bad-guy_mort.png')";
-               
+                for (let f = 0; f < enemies.length; f++) {
+                    if(colisionDetect (shoot,shoot.offsetLeft, shoot.offsetTop, (enemies[f]))){
+                    shootExplode();
+                    (enemies[f]).style.backgroundImage = "url('assets/mechants/bad-guy_mort.png')";
                 
-                console.log(enemies)
-                    document.getElementById('gameContainer').removeChild((enemies[i]));
-                    enemies = document.getElementsByClassName('enemies');
-                }            
+                    
+                    console.log(enemies)
+                        document.getElementById('gameContainer').removeChild((enemies[f]));
+                        enemies = document.getElementsByClassName('enemies');
+                    }            
             }
     
-            for (let j = 0; j < boss.length; j++) {
-                if(colisionDetect (shoot,shoot.offsetLeft, shoot.offsetTop, (boss[j]))){
-                shootExplode();
-                (boss[j]).style.backgroundImage = "url('assets/mechants/boss_mort.png')";
-                
-                
-                console.log(boss)
-                    document.getElementById('gameContainer').removeChild((boss[j]));
-                    boss = document.getElementsByClassName('boss');
-                }            
-            }
+                for (let g = 0; g < boss.length; g++) {
+                    if(colisionDetect (shoot,shoot.offsetLeft, shoot.offsetTop, (boss[g]))){
+                    shootExplode();
+                    (boss[g]).style.backgroundImage = "url('assets/mechants/boss_mort.png')";
+                    
+                    
+                    console.log(boss)
+                        document.getElementById('gameContainer').removeChild((boss[g]));
+                        boss = document.getElementsByClassName('boss');
+                    }            
+                }
                     
                 }           
     })    
@@ -70,7 +67,7 @@ let shootMouv = 0
         setTimeout (()=>testEnd(),1000)
     }
         
-
+    setInterval(shooting,100)
 
 /* console.log(shooting('shoot')) */
 

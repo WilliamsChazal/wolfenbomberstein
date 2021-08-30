@@ -1,7 +1,3 @@
-
-
-
-
 function addPlayer(){
       let div = document.createElement('div');
       div.setAttribute('class', 'player')
@@ -111,24 +107,17 @@ function doomGuyDead() {
     setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/mort-5.png')", 700);
     setTimeout (()=>document.getElementById('player').style.display='none', 750); 
     setTimeout (()=>document.getElementById('mort').style.display='block', 800);
-    
-    
-    /* setTimeout (()=>alert('dead'), 2500); */
+
 }
 
 function bombExplode() {
   setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/bomb-2.png')",500);
   setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/bomb-3.png')", 650);
- 
-
-  
 }
-function shootExplode() {
-  setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/shoot-1.png')",500);
-  setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/shoot-2.png')", 650);
- 
 
-  
+function shootExplode() {
+  setTimeout (()=>shoot.style.backgroundImage="url('assets/bomb/shoot-1.png')",500);
+  setTimeout (()=>shoot.style.backgroundImage="url('assets/bomb/shoot-2.png')", 650); 
 }
 
 //Fonction de déplacement du DoomGuy
@@ -201,7 +190,7 @@ document.addEventListener('keydown', function(event) {
   count = 0;
    /* addWall(); */
    addTileSet();
-   addEnemies(10);
+   addEnemies(1);
    addBoss()
    testEnd();
    addPlayer();
