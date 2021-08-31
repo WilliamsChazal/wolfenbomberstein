@@ -39,6 +39,8 @@ body{
 
 .texte{
    color: white; 
+   font-size: 24px;
+   letter-spacing: 2px;
 }
 
 
@@ -125,6 +127,7 @@ body{
     position: relative;
     overflow: hidden;
 
+
 }
 
 
@@ -201,6 +204,7 @@ body{
     border: 2px solid #2a3cad;
     color: white;
     padding: 20px;
+    margin-top: 40px;
   }
   
   .box:before{

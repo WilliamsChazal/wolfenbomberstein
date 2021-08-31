@@ -2,9 +2,7 @@ body{
     background-color: black;
    
 }
-div{
-  border: red solid 1px;
-}
+
 @font-face {
     font-family: "poxel-font";
     src: url("/wolfenbomberstein/assets/poxel-font.ttf");
@@ -36,9 +34,14 @@ div{
 }
 
 .texte{
-   color: white; 
+  color: white; 
+  font-size: 24px;
+  letter-spacing: 2px;
 }
 
+span{
+  color: #1fe804;
+}
 
  
 #victoire{
@@ -220,6 +223,7 @@ div{
     border: 2px solid #108d25;
     color: white;
     padding: 20px;
+    margin-top: 40px;
   }
   
   .box:before{

@@ -38,10 +38,14 @@ body{
 
 
 .texte{
-   color: white; 
+  color: white; 
+  font-size: 24px;
+  letter-spacing: 2px; 
 }
 
-
+span{
+  color: #bf0f0f;
+}
  
 #victoire{
   display: flex;
@@ -121,7 +125,7 @@ body{
     width: 640px;
     height: 640px;
     margin: 0 auto;
-    background-image: url(../assets/background.png);
+    background-image: url(../assets/background_lvl-3.png);
     position: relative;
     overflow: hidden;
 
@@ -150,6 +154,17 @@ body{
     z-index: 99;
 }
 
+#shoot{
+  width: 20px;
+  height: 20px;
+  background-image: url(../assets/bomb/shoot-1.png);
+  display: none;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+}
+
 .enemies{
     width: 45px;
     height: 45px;
@@ -166,6 +181,14 @@ body{
     background-size: cover;
     background-position: center;
 }
+.doom{
+    width: 65px;
+    height: 65px;
+    background-image: url(../assets/mechants/doom-1.png);
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+}
 .tileset{
     width: 40px;
     height: 40px;
@@ -174,7 +197,15 @@ body{
     background-size: cover;
     background-position: center;
 }
-
+.gun{
+  height: 20px;
+  width: 60px;
+  background-image: url(../assets/bomb/gun-1.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
+}
 .container_rules{
     color: white;
     font-family: "poxel-font";
@@ -199,6 +230,7 @@ body{
     border: 2px solid #ad2a2a;
     color: white;
     padding: 20px;
+    margin-top: 40px;
   }
   
   .box:before{

@@ -85,23 +85,4 @@ for (let i = 0; i < boss.length; i++) {
         if (bossCountLvl3 >= 2 ) bossCountLvl3=0 
 }
 
-/* const doomGuy = document.getElementById('doomGuy');
-const boss = document.getElementsByClassName('boss');
-colisionDetect(doomGuy.offsetLeft, doomGuy.offsetTop, boss [0]);
-function colisionDetect(x, y, boss){
-    if ((y < boss.offsetTop + boss.offsetHeight &&
-        y + doomGuy.offsetHeight > boss.offsetTop) &&
-        (x < boss.offsetLeft + boss.offsetWidth &&
-        x + doomGuy.offsetWidth > boss.offsetLeft)) {
-            console.log('boom'); 
-        return true;} 
-    else {
-        return false}
-          
-} */
-
-/*  
-    if (boss.offsetTop + enemiesSize < doomGuy.offsetTop + doomGuySize && boss.offsetLeft + enemiesSize < doomGuy.offsetLeft + doomGuySize){
-   https://developer.mozilla.org/fr/docs/Games/Techniques/2D_collision_detection 
-    */
 

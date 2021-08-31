@@ -1,4 +1,3 @@
-
 let tilesetLvl2 = document.getElementsByClassName('tileset');
 let gameLvl2 = document.getElementById('gameContainer');
 let moveSizeLvl2 = 12;
@@ -211,9 +210,9 @@ document.addEventListener('keydown', function(event) {
   count = 0;
    /* addWall(); */
    addtileset();
-   addEnemies(1);
+   addEnemies(8);
    addGun(2);
-   addBoss(1)
+   addBoss(2)
    testEnd();
    addPlayer();
    addBomb();

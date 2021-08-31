@@ -78,23 +78,4 @@ switch (random) {
         
 }
 
-/* const doomGuy = document.getElementById('doomGuy');
-const enemies = document.getElementsByClassName('enemies');
-colisionDetect(doomGuy.offsetLeft, doomGuy.offsetTop, enemies [0]);
-function colisionDetect(x, y, enemy){
-    if ((y < enemy.offsetTop + enemy.offsetHeight &&
-        y + doomGuy.offsetHeight > enemy.offsetTop) &&
-        (x < enemy.offsetLeft + enemy.offsetWidth &&
-        x + doomGuy.offsetWidth > enemy.offsetLeft)) {
-            console.log('boom'); 
-        return true;} 
-    else {
-        return false}
-          
-} */
-
-/*  
-    if (enemies.offsetTop + enemiesSize < doomGuy.offsetTop + doomGuySize && enemies.offsetLeft + enemiesSize < doomGuy.offsetLeft + doomGuySize){
-   https://developer.mozilla.org/fr/docs/Games/Techniques/2D_collision_detection 
-    */
 
