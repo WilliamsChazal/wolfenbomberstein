@@ -181,7 +181,7 @@ document.addEventListener('keydown', function(event) {
   count = 0;
    /* addWall(); */
    addTileSet();
-   addEnemies(10);
+   addEnemies(5);
    addBoss()
    addPlayer();
    addBomb();

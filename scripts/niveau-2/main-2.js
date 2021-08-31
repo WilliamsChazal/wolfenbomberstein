@@ -225,9 +225,9 @@ document.addEventListener('keydown', function(event) {
   count = 0;
    /* addWall(); */
    addtileset();
-   addEnemies(10);
+   addEnemies(5);
    addGun(2);
-   addBoss(3)
+   addBoss(2)
    addPlayer();
    addBomb();
    addShoot();
