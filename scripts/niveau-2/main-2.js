@@ -225,13 +225,13 @@ document.addEventListener('keydown', function(event) {
   count = 0;
    /* addWall(); */
    addtileset();
-   addEnemies(8);
+   addEnemies(10);
    addGun(2);
-   addBoss(2)
-   testEnd();
+   addBoss(3)
    addPlayer();
    addBomb();
    addShoot();
+   testEnd();
    
  }
 

@@ -6,19 +6,7 @@
 
     shoot.style.top =shoot.offsetTop +10 +'px'
     shoot.style.left =shoot.offsetLeft  +'px'
-    for (let i = 0; i < enemies.length; i++) {
-        if(colisionDetect (shoot,shoot.offsetLeft, shoot.offsetTop, enemies[i])){
-            console.log('shoot');
-        shootExplode();
-        (enemies[i]).style.backgroundImage = "url('assets/mechants/bad-guy_mort.png')";
-    
-        
-        console.log(enemies)
-            document.getElementById('gameContainer').removeChild((enemies[i]));
-            enemies = document.getElementsByClassName('enemies');
-            document.getElementById('shoot').style.display='none'
-        }            
-}
+
 
     for (let j = 0; j < boss.length; j++) {
         if(colisionDetect (shoot,shoot.offsetLeft, shoot.offsetTop, boss[j])){

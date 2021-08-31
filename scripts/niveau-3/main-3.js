@@ -224,14 +224,14 @@ document.addEventListener('keydown', function(event) {
   count = 0;
    /* addWall(); */
    addtileset(15);
-   addEnemies(8);
+   addEnemies(10);
    addGun(3);
-   addBoss(2);
+   addBoss(4);
    addDoom(2)
-   testEnd();
    addPlayer();
    addBomb();
    addShoot();
+   testEnd();
    
  }
 
