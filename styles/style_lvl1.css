@@ -169,7 +169,7 @@ button :hover{
     z-index: 2;
 }
 
-#bomb{
+/* #bomb{
     width: 50px;
     height: 50px;
     background-image: url(../assets/bomb/bomb.png);
@@ -178,7 +178,7 @@ button :hover{
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 99;
-}
+} */
 
 
 

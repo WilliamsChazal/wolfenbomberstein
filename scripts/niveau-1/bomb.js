@@ -49,5 +49,13 @@ function testEnd() {
         setTimeout (()=>testEnd(),1000)
 }
 
+hache()
+function hache() {
+    let doomGuy = document.getElementById('player');
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-1.png')", 100);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-2.png')", 300);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-3.png')", 500);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-4.png')", 500);
 
+}
 
