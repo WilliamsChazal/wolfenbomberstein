@@ -2,7 +2,7 @@
 
 <div id="nextLevel">
 <div class="container_titre">
-        <div class="titre"><H1>WolfenBomberStein</H1></div>
+        <div class="titre"><H1>WolfenBomberSteinMan</H1></div>
         <div class="lvl"><H3>Niveau 2</H3></div>   
     </div>
     
