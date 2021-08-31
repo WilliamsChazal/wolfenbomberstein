@@ -26,6 +26,7 @@
 
                 <div id="player"></div>
                 <div id="bomb"></div>
+                <div id="shoot"></div>
                 
             </div>
         </div>
@@ -37,13 +38,22 @@
 
 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+                $(document).ready(function(){
+                $("#btnNext").click(function(){
+                    $("#nextLevel").load("niveau-3.php").show();
+                });
+                });
+        </script>
    
 
 
 
-  <script src="/wolfenbomberstein/scripts/niveau-2/badguy-2.js"></script>
+<script src="/wolfenbomberstein/scripts/niveau-2/badguy-2.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-2/bomb-2.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-2/boss-2.js"></script>
+<script src="/wolfenbomberstein/scripts/niveau-1/shoot-1.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-2/main-2.js"></script>
 
 

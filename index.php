@@ -34,7 +34,7 @@
 
                 <div id="player"></div>
                 <div id="bomb"></div>
-                <div id="shoot"></div>
+                
             </div>
         </div>
   </div>
@@ -59,7 +59,6 @@
 
 <script src="/wolfenbomberstein/scripts/niveau-1/badguy.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-1/bomb.js"></script>
-<script src="/wolfenbomberstein/scripts/niveau-1/shoot-1.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-1/boss.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-1/main.js"></script>
 

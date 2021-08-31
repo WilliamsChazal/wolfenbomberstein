@@ -116,11 +116,22 @@ function doomGuyDead() {
 
 function bombExplode() {
   setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/bomb-2.png')",500);
-  setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/bomb-3.png')", 650);
- 
-
-  
+  setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/bomb-3.png')", 650); 
 }
+
+
+function shootExplode() {
+  setTimeout (()=>shoot.style.backgroundImage="url('assets/bomb/shoot-1.png')",500);
+  setTimeout (()=>shoot.style.backgroundImage="url('assets/bomb/shoot-2.png')", 650); 
+}
+
+function addShoot(){
+  let div = document.createElement('div');
+  div.setAttribute('class', 'shoot')
+  div.setAttribute('id', 'shoot')
+  document.getElementById('gameContainer').appendChild(div);
+}
+
 
 //Fonction de déplacement du DoomGuy
 document.addEventListener('keydown', function(event) {

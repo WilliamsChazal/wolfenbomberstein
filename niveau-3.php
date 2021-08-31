@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style_lvl3.css">
+<link rel="stylesheet" href="styles/style_lvl3.css">
 
 
 <div class="container_titre">
@@ -26,6 +26,7 @@
 
                 <div id="player"></div>
                 <div id="bomb"></div>
+                <div id="shoot"></div>
             </div>
         </div>
   </div>
@@ -38,3 +39,8 @@
                 });
                 });
         </script>
+<script src="/wolfenbomberstein/scripts/niveau-3/badguy-3.js"></script>
+<script src="/wolfenbomberstein/scripts/niveau-3/bomb-3.js"></script>
+<script src="/wolfenbomberstein/scripts/niveau-3/boss-3.js"></script>
+<script src="/wolfenbomberstein/scripts/niveau-3/shoot-3.js"></script>
+<script src="/wolfenbomberstein/scripts/niveau-3/main-3.js"></script>
