@@ -8,7 +8,7 @@
     
     
 <div class="container_global">
-  <div class="container_rules">Utiliser les fleches directionnels pour vous deplacer.<br><br> La touche 'ESPACE' permet de poser une bombe qui detruit les enemies.<br><br>Pour gagner il suffit de detruire tous les enemies.<br><br>Les monstres bleu peuvent tuer le heros, <br><br>si le heros meurt la partie est finie.<br><br><span>Ramasser le fusil pour pouvoir tirer avec la touche 'E'</span></div>
+  <div class="container_rules">Utiliser les fleches directionnels pour vous deplacer.<br><br> La touche 'ESPACE' permet de poser une bombe qui detruit les enemies.<br><br>Pour gagner il suffit de detruire tous les enemies.<br><br>Si le heros meurt la partie est finie.<br><br><span>Les monstres bleu peuvent tuer le heros</span><br><br><span>Ramasser le fusil pour pouvoir tirer avec la touche 'E'<br><br><span>Les Maraudeurs veulent tuer le heros, mais le heros ne peut les tuer !</span></span></div>
   <div id="nextLevel">
   <div class="container_game">
   <div id="mort">GAME OVER<br><button onclick="document.location.reload()">Rejouer</button></div>

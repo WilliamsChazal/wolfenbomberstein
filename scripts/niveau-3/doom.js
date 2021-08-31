@@ -77,7 +77,7 @@ switch (random) {
 for (let i = 0; i < doom.length; i++) {
             if(colisionDetect (doomGuy,doomGuy.offsetLeft, doomGuy.offsetTop, (doom[i]))){
                /*  doom.backgroundImage="url('assets/mechants/demon-2.png')" */
-                doomGuyDead();
+                doomGuyDead2();
                
             }
             

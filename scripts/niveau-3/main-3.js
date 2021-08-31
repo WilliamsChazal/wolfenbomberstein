@@ -126,11 +126,12 @@ function doomGuyDead2() {
   let doomGuy = document.getElementById('player');
   doomGuy.style.backgroundImage="url('assets/player/mort-1.png')";
     setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/mort-2.png')", 100);
-    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/mort-3.png')", 300);
-    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/mort-4.png')", 500);
-    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/mort-5.png')", 700);
-    setTimeout (()=>document.getElementById('player').style.display='none', 750); 
-    setTimeout (()=>document.getElementById('mort').style.display='block', 800);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/player_mort-1.png')", 300);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/player_mort-2.png')", 600);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/player_mort-3.png')", 900);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/player_mort-4.png')", 1200);
+    setTimeout (()=>document.getElementById('player').style.display='none', 1700); 
+    setTimeout (()=>document.getElementById('mort').style.display='block', 2000);
     
     
     /* setTimeout (()=>alert('dead'), 2500); */
