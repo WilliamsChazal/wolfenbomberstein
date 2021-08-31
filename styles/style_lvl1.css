@@ -150,16 +150,7 @@ body{
     z-index: 99;
 }
 
-#shoot{
-  width: 20px;
-  height: 20px;
-  background-image: url(../assets/bomb/shoot-1.png);
-  display: none;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 100;
-}
+
 
 .enemies{
     width: 45px;

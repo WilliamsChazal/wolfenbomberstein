@@ -3,6 +3,8 @@ let tilesetLvl2 = document.getElementsByClassName('tileset');
 let gameLvl2 = document.getElementById('gameContainer');
 let moveSizeLvl2 = 12;
 let doomGuyWalkLvl2 = 0;
+
+let hasGun =false;
 count = 0;
 
 
@@ -16,6 +18,12 @@ function addBomb(){
       let div = document.createElement('div');
       div.setAttribute('class', 'bomb')
       div.setAttribute('id', 'bomb')
+      document.getElementById('gameContainer').appendChild(div);
+}
+function addShoot(){
+      let div = document.createElement('div');
+      div.setAttribute('class', 'shoot')
+      div.setAttribute('id', 'shoot')
       document.getElementById('gameContainer').appendChild(div);
 }
 
@@ -40,6 +48,8 @@ function colisionDetectList(ref_obj, new_x, new_y, list) {
           }
         } return false 
 }
+
+
 
 
 // Génération aléatoire du décor
@@ -125,12 +135,7 @@ function shootExplode() {
   setTimeout (()=>shoot.style.backgroundImage="url('assets/bomb/shoot-2.png')", 650); 
 }
 
-function addShoot(){
-  let div = document.createElement('div');
-  div.setAttribute('class', 'shoot')
-  div.setAttribute('id', 'shoot')
-  document.getElementById('gameContainer').appendChild(div);
-}
+
 
 
 //Fonction de déplacement du DoomGuy
@@ -139,14 +144,14 @@ document.addEventListener('keydown', function(event) {
 /*     console.log(doomGuy.style.top);
     console.log(doomGuy.style.left); */
   if (event.code == 'ArrowUp') {
-
+    takeGun();
       if (!colisionDetectList(doomGuy,doomGuy.offsetLeft, doomGuy.offsetTop-moveSizeLvl2, tileset)) {
-        if(doomGuy.offsetTop >=8){  
+        if(doomGuy.offsetTop >=0){  
           doomGuyWalkLvl2 = doomGuyWalkLvl2 + 1;
           count ++;
           this.onkeydown = doomGuy.style.backgroundImage="url('assets/player/dos-" + count + ".png')";
         if (count >= 5 ) count=0
-          doomGuy.style.top = (doomGuy.offsetTop - moveSizeLvl2) + "px";}
+          doomGuy.style.top = (doomGuy.offsetTop - moveSizeLvl2) + "px";} 
       }
     
   } 
@@ -154,8 +159,9 @@ document.addEventListener('keydown', function(event) {
 
   else if (event.code == 'ArrowRight') {
     // déplacement
+    takeGun();
     if (!colisionDetectList(doomGuy,doomGuy.offsetLeft + moveSizeLvl2, doomGuy.offsetTop, tileset)){
-    if(doomGuy.offsetLeft <=720){
+    if(doomGuy.offsetLeft <=590){
       doomGuyWalkLvl2 = doomGuyWalkLvl2 + 1;
       count ++;
       this.onkeydown = doomGuy.style.backgroundImage="url('assets/player/droite-" + count + ".png')";
@@ -167,8 +173,9 @@ document.addEventListener('keydown', function(event) {
 
   else if (event.code == 'ArrowDown') {
     // déplacement   
+    takeGun();
     if (!colisionDetectList(doomGuy,doomGuy.offsetLeft, doomGuy.offsetTop + moveSizeLvl2,tileset)){ 
-    if(doomGuy.offsetTop <=420){
+    if(doomGuy.offsetTop <=580){
       doomGuyWalkLvl2 = doomGuyWalkLvl2 + 1;
       count ++;
       this.onkeydown = doomGuy.style.backgroundImage="url('assets/player/face-" + count + ".png')";
@@ -180,6 +187,7 @@ document.addEventListener('keydown', function(event) {
   else if (event.code == 'ArrowLeft') {
     if (!colisionDetectList(doomGuy,doomGuy.offsetLeft -moveSizeLvl2, doomGuy.offsetTop, -moveSizeLvl2, tileset)){
     // déplacement  
+    takeGun();
   if(doomGuy.offsetLeft >= -5){
     doomGuyWalkLvl2 = doomGuyWalkLvl2 + 1;
     count ++;
@@ -203,11 +211,14 @@ document.addEventListener('keydown', function(event) {
   count = 0;
    /* addWall(); */
    addtileset();
-   addEnemies(8);
-   addBoss(2)
+   addEnemies(1);
+   addGun(2);
+   addBoss(1)
    testEnd();
    addPlayer();
    addBomb();
+   addShoot();
+   
  }
 
  init();
