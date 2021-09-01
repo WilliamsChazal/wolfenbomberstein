@@ -1,11 +1,9 @@
-
-let bossCount = 0;
-
 function addBoss(max){
 
     for (let i = 0; i < max; i++) {
         let div = document.createElement('div');
         div.setAttribute('class', 'boss')
+        div.setAttribute('animtCounterBoss','0')
         div.setAttribute('id', 'boss-'+i)
         document.getElementById('gameContainer').appendChild(div);
         positionEnemies(div);
@@ -28,17 +26,19 @@ function positionEnemies(boss){
     boss.style.left = y + 'px';
 }
 
-setInterval(mouvEnemies, 500)
+setInterval(mouvEnemies, 400)
 
 function mouvEnemies(){
     let doomGuy = document.getElementById('player');
     let boss = document.getElementsByClassName('boss');
-    bossCount++;
     
-
     for (let i = 0; i < boss.length; i++){
+        let animtCounterBoss=parseInt(boss[i].getAttribute('animtCounterBoss'))
+        animtCounterBoss ++; 
+        if (animtCounterBoss >2) animtCounterBoss=1
+        boss[i].setAttribute('animtCounterBoss',animtCounterBoss)
         let random = Math.floor(Math.random()*24);
-        boss[i].style.backgroundImage="url('assets/mechants/boss-" + bossCount + ".png')";
+        boss[i].style.backgroundImage="url('assets/mechants/boss-" + animtCounterBoss + ".png')";
         
 switch (random) {
     case 0: 
@@ -82,7 +82,7 @@ for (let i = 0; i < boss.length; i++) {
             }
             
         }
-        if (bossCount >= 2 ) bossCount=0 
+
 }
 
 

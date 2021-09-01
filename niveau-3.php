@@ -39,10 +39,10 @@
                 });
                 });
         </script>
-<script src="/wolfenbomberstein/scripts/niveau-1/badguy.js"></script>
+<script src="/wolfenbomberstein/scripts/badguy.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-3/gun-3.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-3/bomb-3.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-3/shoot-3.js"></script>
-<script src="/wolfenbomberstein/scripts/niveau-3/boss-3.js"></script>
-<script src="/wolfenbomberstein/scripts/niveau-3/doom.js"></script>
+<script src="/wolfenbomberstein/scripts/boss.js"></script>
+<script src="/wolfenbomberstein/scripts/doom.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-3/main-3.js"></script>
