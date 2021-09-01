@@ -1,3 +1,24 @@
+let hacheHit=0;
+let hacheHitCount=1;
+
+
+function hache() {
+    let doomGuy = document.getElementById('player');
+  doomGuy.style.backgroundImage="url('assets/player/hache-1.png')";
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-2.png')", 50);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-3.png')", 100);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-4.png')", 150);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-5.png')", 200);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-6.png')", 250);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-7.png')", 300);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-8.png')", 350);
+    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-9.png')", 400);
+ 
+}
+
+
+
+
 document.addEventListener('keydown', function(event) {
     let bomb = document.getElementById('bomb');
     /* console.log('coucou') */
@@ -5,14 +26,14 @@ document.addEventListener('keydown', function(event) {
     let boss = document.getElementsByClassName('boss');
     let doomGuy = document.getElementById('player');
     if (event.code == 'Space'){
-        /* setTimeout (()=> */doomGuy.style.backgroundImage="url('assets/player/tir-1.png')";
-         setTimeout (()=> doomGuy.style.backgroundImage="url('assets/player/tir-2.png')",100);
+       hache();
 
         bomb.style.display='block';
         bomb.style.top = doomGuy.offsetTop  +10 + "px";
         bomb.style.left = doomGuy.offsetLeft +10 + "px";
  
         setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/bomb.png')", 200);
+        setTimeout (()=>bomb.style.display='none', 400);
 
         for (let i = 0; i < enemies.length; i++) {
             if(colisionDetect (bomb,bomb.offsetLeft, bomb.offsetTop, (enemies[i]))){
@@ -49,13 +70,6 @@ function testEnd() {
         setTimeout (()=>testEnd(),1000)
 }
 
-hache()
-function hache() {
-    let doomGuy = document.getElementById('player');
-    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-1.png')", 100);
-    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-2.png')", 300);
-    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-3.png')", 500);
-    setTimeout (()=>doomGuy.style.backgroundImage="url('assets/player/hache-4.png')", 500);
 
-}
+
 

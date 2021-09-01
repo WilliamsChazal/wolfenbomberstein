@@ -157,7 +157,7 @@ span{
 
 #player{
      width: 50px;
-    height:65px; 
+    height: 60px; 
     background-image: url(../assets/player/face-1.png);
     background-size: 100%;
     background-position:  center;
