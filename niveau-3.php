@@ -39,7 +39,7 @@
                 });
                 });
         </script>
-<script src="/wolfenbomberstein/scripts/niveau-3/badguy-3.js"></script>
+<script src="/wolfenbomberstein/scripts/niveau-1/badguy.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-3/gun-3.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-3/bomb-3.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-3/shoot-3.js"></script>

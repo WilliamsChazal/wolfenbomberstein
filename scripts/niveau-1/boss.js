@@ -1,4 +1,4 @@
-let bossWalk = 0;
+
 let bossCount = 0;
 
 function addBoss(max){

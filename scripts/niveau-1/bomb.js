@@ -1,4 +1,4 @@
-let hacheHitCount=1;
+
 
 
 function hache() {

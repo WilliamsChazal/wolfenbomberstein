@@ -44,7 +44,7 @@
                 });
         </script>
    
-<script src="/wolfenbomberstein/scripts/niveau-2/badguy-2.js"></script>
+<script src="/wolfenbomberstein/scripts/niveau-1/badguy.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-2/gun.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-2/bomb-2.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-2/boss-2.js"></script>
