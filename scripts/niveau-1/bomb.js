@@ -1,4 +1,3 @@
-let hacheHit=0;
 let hacheHitCount=1;
 
 
@@ -29,7 +28,7 @@ document.addEventListener('keydown', function(event) {
        hache();
 
         bomb.style.display='block';
-        bomb.style.top = doomGuy.offsetTop  +10 + "px";
+        bomb.style.top = doomGuy.offsetTop  +20 + "px";
         bomb.style.left = doomGuy.offsetLeft +10 + "px";
  
         setTimeout (()=>bomb.style.backgroundImage="url('assets/bomb/bomb.png')", 200);
@@ -37,19 +36,17 @@ document.addEventListener('keydown', function(event) {
 
         for (let i = 0; i < enemies.length; i++) {
             if(colisionDetect (bomb,bomb.offsetLeft, bomb.offsetTop, (enemies[i]))){
-               bombExplode();
-               (enemies[i]).style.backgroundImage = "url('assets/mechants/bad-guy_mort.png')";
-               /* setTimeout (()=>(enemies [i]).style.display ='none',600); */
-             
+               /* bombExplode(); */
                console.log(enemies)
                 document.getElementById('gameContainer').removeChild((enemies[i]));
                 enemies = document.getElementsByClassName('enemies');
+                
             }            
         }
 
         for (let j = 0; j < boss.length; j++) {
             if(colisionDetect (bomb,bomb.offsetLeft, bomb.offsetTop, (boss[j]))){
-               bombExplode();
+               /* bombExplode(); */
                (boss[j]).style.backgroundImage = "url('assets/mechants/boss_mort.png')";
                /* setTimeout (()=>(enemies [i]).style.display ='none',600); */
              

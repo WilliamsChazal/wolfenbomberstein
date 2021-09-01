@@ -56,8 +56,9 @@
         let boss = document.getElementsByClassName('boss');
         if (enemies.length == 0 && boss.length == 0) {
             setTimeout (()=>document.getElementById('victoire').style.display='block', 800);
-        }
+        }else
         setTimeout (()=>testEnd(),1000)
+        
     }
         
     setInterval(shooting,100)
