@@ -1,6 +1,3 @@
-
-
-
 function hache() {
     let doomGuy = document.getElementById('player');
   doomGuy.style.backgroundImage="url('assets/player/hache-1.png')";

@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="styles/style_lvl2.css">
+<link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 
 <div id="nextLevel">
 <div class="container_titre">
@@ -46,7 +47,7 @@
    
 <script src="/wolfenbomberstein/scripts/badguy.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-2/gun.js"></script>
-<script src="/wolfenbomberstein/scripts/niveau-2/bomb-2.js"></script>
+<script src="/wolfenbomberstein/scripts/bomb.js"></script>
 <script src="/wolfenbomberstein/scripts/boss.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-2/shoot-1.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-2/main-2.js"></script>

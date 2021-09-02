@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="styles/style_lvl3.css">
+<link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 
 
 <div class="container_titre">
@@ -41,7 +42,7 @@
         </script>
 <script src="/wolfenbomberstein/scripts/badguy.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-3/gun-3.js"></script>
-<script src="/wolfenbomberstein/scripts/niveau-3/bomb-3.js"></script>
+<script src="/wolfenbomberstein/scripts/bomb.js"></script>
 <script src="/wolfenbomberstein/scripts/niveau-3/shoot-3.js"></script>
 <script src="/wolfenbomberstein/scripts/boss.js"></script>
 <script src="/wolfenbomberstein/scripts/doom.js"></script>
