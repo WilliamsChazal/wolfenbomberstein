@@ -156,7 +156,7 @@ document.addEventListener('keydown', function(event) {
   let doomGuy = document.getElementById('player');
 /*     console.log(doomGuy.style.top);
     console.log(doomGuy.style.left); */
-  if (event.code == 'ArrowUp') {
+  if (event.code == 'ArrowUp'|| 'z') {
     takeGun();
       if (!colisionDetectList(doomGuy,doomGuy.offsetLeft, doomGuy.offsetTop-moveSizeLvl3, tileset)) {
         if(doomGuy.offsetTop >=0){  
@@ -170,7 +170,7 @@ document.addEventListener('keydown', function(event) {
   } 
 
 
-  else if (event.code == 'ArrowRight') {
+  else if (event.code == 'ArrowRight'|| 'd') {
     // déplacement
     takeGun();
     if (!colisionDetectList(doomGuy,doomGuy.offsetLeft + moveSizeLvl3, doomGuy.offsetTop, tileset)){
@@ -184,7 +184,7 @@ document.addEventListener('keydown', function(event) {
 }   
 } 
 
-  else if (event.code == 'ArrowDown') {
+  else if (event.code == 'ArrowDown'|| 's') {
     // déplacement   
     takeGun();
     if (!colisionDetectList(doomGuy,doomGuy.offsetLeft, doomGuy.offsetTop + moveSizeLvl3,tileset)){ 
@@ -197,7 +197,7 @@ document.addEventListener('keydown', function(event) {
   }
 }
 } 
-  else if (event.code == 'ArrowLeft') {
+  else if (event.code == 'ArrowLeft'|| 'q') {
     if (!colisionDetectList(doomGuy,doomGuy.offsetLeft -moveSizeLvl3, doomGuy.offsetTop, -moveSizeLvl3, tileset)){
     // déplacement  
     takeGun();

@@ -146,7 +146,7 @@ document.addEventListener('keydown', function(event) {
   else if (event.code == 'ArrowDown') {
     // déplacement   
     if (!colisionDetectList(doomGuy,doomGuy.offsetLeft, doomGuy.offsetTop + moveSize,tileset)){ 
-    if(doomGuy.offsetTop <=420){
+    if(doomGuy.offsetTop <=580){
       doomGuyWalk = doomGuyWalk + 1;
       count ++;
       this.onkeydown = doomGuy.style.backgroundImage="url('assets/player/face-" + count + ".png')";
@@ -155,7 +155,7 @@ document.addEventListener('keydown', function(event) {
   }
 }
 } 
-  else if (event.code == 'ArrowLeft') {
+  else if (event.code == 'ArrowLeft'||'Q') {
     if (!colisionDetectList(doomGuy,doomGuy.offsetLeft -moveSize, doomGuy.offsetTop, -moveSize, tileset)){
     // déplacement  
   if(doomGuy.offsetLeft >= -5){
